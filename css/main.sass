@@ -3,14 +3,16 @@
 ---
 @charset "utf-8"
 
-// Variables
+// -------  Variables
 
-//fonts
-$base-font-family: helvetica, arial, sans-serif
-$base-font-size:   16px
-$small-font-size:  $base-font-size * 0.875
+// -- Fonts
+$font-family: 'Raleway', helvetica, arial, sans-serif
+$font-size:   14px
 
-//colors
+$header-font-family: 'Raleway', helvetica, arial, sans-serif
+// -- Colors
+
+// Base
 $primary: #104B97
 $primary-light: #428ECB
 $primary-dark: #0B4492
@@ -19,11 +21,31 @@ $black: #303030
 $grey: #D8D8D8
 $magenta: #DE2C69
 
+// -- Font Colors
+
+// Page text
+$font-color: white
+$header-font-color: $font-color
+
+// Links
+$link-color: $primary-light
+$link-hover-color: lighten($primary-light, 10%)
+
+// -- Backgrounds
+
+// Background-color
+$background-color: $primary
+
 // Import Vendor
 @import "vendor/normalize"
 @import "vendor/toast"
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "utility"
-@import "nav"
+@import "base"
+@import "type"
 @import "layout"
+
+//sections
+@import "nav"
+@import "hero"
