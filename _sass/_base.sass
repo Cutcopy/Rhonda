@@ -1,2 +1,37 @@
 body
   background: $background-color
+
+input, textarea
+  width: 100%
+  display: inline-block
+  border-radius: $border-radius
+  border: none
+  padding: 0.5em
+  margin: 0.75em
+  box-shadow: 0 0.33em 0 $primary
+  &:focus
+    box-shadow: 0 0.33em $primary-light
+    outline: none
+    transform: scale(1.03)
+
+button, input[type="submit"]
+  background: $magenta
+  border: none
+  color: white
+  box-shadow: 0 0.33em 0 darken($magenta, 10%)
+  transition: 0.3s
+  padding: 0.5em
+  &:hover
+    background: lighten($magenta, 10%)
+    box-shadow: 0 0 0 transparent
+
+.btn-ghost
+  border-radius: 20px
+  border: 0.33em solid $primary
+  background: white
+  color: $primary
+  transition: 0.3s
+  padding: 0.5em
+  &:hover
+    background: $primary
+    color: white

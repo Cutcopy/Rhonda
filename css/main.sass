@@ -7,9 +7,8 @@
 
 // -- Fonts
 $font-family: 'Raleway', helvetica, arial, sans-serif
-$font-size:   14px
-
-$header-font-family: 'Raleway', helvetica, arial, sans-serif
+$font-size:   15px
+$heading-font-family: 'Raleway', helvetica, arial, sans-serif
 // -- Colors
 
 // Base
@@ -24,8 +23,8 @@ $magenta: #DE2C69
 // -- Font Colors
 
 // Page text
-$font-color: white
-$header-font-color: $font-color
+$font-color: #111
+$heading-font-color: $font-color
 
 // Links
 $link-color: $primary-light
@@ -34,7 +33,22 @@ $link-hover-color: lighten($primary-light, 10%)
 // -- Backgrounds
 
 // Background-color
-$background-color: $primary
+$background-color: white
+$nav-background-color: $background-color
+$footer-background-color: $black
+
+
+// -- Fun stuff
+$border-radius: 0.3em
+
+// -- Grid Width
+$wrapper: 80rem
+
+\:root
+  font-size: $font-size
+
+*
+  box-sizing: border-box
 
 // Import Vendor
 @import "vendor/normalize"
